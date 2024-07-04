@@ -4,19 +4,25 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "cargo-ios": "tsx scripts/cargo-ios.ts",
+    "cargo-android": "tsx scripts/cargo-android.ts",
     "web": "expo start --web"
   },
   "dependencies": {
     "expo": "~51.0.17",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.2"
+    "react-native": "0.74.2",
+    "react-native-vision-camera": "^4.4.1",
+    "react-native-worklets-core": "^1.3.3",
+    "react-native-reanimated": "~3.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
+    "tsx": "^4.16.2",
     "typescript": "^5.1.3"
   },
   "private": true
